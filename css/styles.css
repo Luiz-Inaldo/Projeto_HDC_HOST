@@ -1,0 +1,423 @@
+/* reset css & global configurations*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #70747a;
+}
+
+/* navbar */
+
+.navbar_container {
+    width: 100%;
+    height: 80px;
+    background: #333;
+    padding: 0 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+
+.navbar_items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar_items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar_items a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar_items a:hover {
+    color: #ccc;
+}
+
+.default_btn {
+    padding: 15px 25px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+}
+
+.navbar_items .default_button:hover {
+    background: #066b2e;
+    color: #fff;
+}
+
+/* main banner */
+
+.main_banner {
+    background: url('../img/mainbanner.png');
+    background-position: center;
+    background-size: cover;
+    padding: 15rem 0;
+}
+
+.main_banner h1, .main_banner p {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+    text-align: center;
+}
+
+.main_banner h1 {
+    font-size: 54px;
+}
+
+.main_banner p {
+    font-size: 32px;
+}
+
+/* services */
+
+.services_container {
+    padding: 5rem 0;
+}
+
+.services_container ul {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.services_container li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt {
+    color: #2cc76a;
+}
+
+.fa-rocket {
+    color: #ef3f29;
+}
+
+.fa-comments {
+    color: #ef8f29;
+}
+
+.services_container h3 {
+    margin-bottom: 25px;
+}
+
+.services_container p {
+    line-height: 24px;
+}
+
+
+/* price and plans */
+
+.pricing_container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing_container h2 {
+    font-size: 36px;
+}
+
+.pricing_container p {
+    font-size: 20px;
+}
+
+.plans_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.plan {
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan ul {
+    padding: 0;
+}
+
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background: #e8e9ea;
+    color: #333;
+}
+
+.plan .price {
+    width: 130px;
+    height: 130px;
+    border-bottom: 3px solid #fff;
+    border-radius: 50%;
+    background: #2cc762;
+    color:#fff;
+    text-align: center;
+    line-height: 130px;
+    margin: 0 auto -45px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan_name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #202b34;
+    padding: 50px 0;
+}
+
+.plan .plan_btn {
+    background-color: #2cc762;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    height: 75px;
+    line-height: 75px;
+}
+
+.plan .recommended {
+    background: #f45c57;
+}
+
+.highlight {
+    position: absolute;
+    bottom: -5px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    background: #0a69b7;
+    border-radius: 10px;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 5px;
+}
+
+/* search domain */
+
+.searchdomain_container {
+    background: #34454e;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.searchdomain_container h2 {
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.searchdomain_container p {
+    font-size: 24px;
+    color: #d5d5d5;
+    margin-bottom: 25px;
+}
+
+.searchdomain_container input {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.searchdomain_container input[type='text']{
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.searchdomain_container input[type='submit']{
+    background: #2cc76a;
+    padding: 25px 30px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.searchdomain_container input[type='submit']:hover {
+    opacity: 1;
+}
+
+/* Contact container */
+
+.contact_container {
+    text-align: center;
+    padding: 5rem 0 3rem 0;
+}
+
+.contact_container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact_container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact_container input,
+.contact_container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contact_container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact_container input[type='submit']{
+    display: block;
+    background: #2cc762;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    text-align: end;
+    font-weight: bolder;
+    padding: 50px 10px 50px;
+    background: #333;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* Responsividade */
+
+/* Smalls tablets a partir de 1100px */
+@media (max-width: 1100px){
+
+    .plans_container{
+        width: 90%;
+    }
+
+    .plans_container .plan {
+        margin: 0 5px;
+    }
+
+}
+
+
+/* tablets até 800px */
+@media (max-width: 800px){
+
+    .main_banner p {
+        padding: 0 6rem;
+    }
+
+    .searchdomain_container h2 {
+        padding: 0 5rem;
+    }
+
+}
+
+/* celular 576px */
+@media (max-width: 425px){
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .navbar_items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .main_banner p {
+        padding: 0 2rem;
+    }
+
+    .services_container ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .plans_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .plans_container .plan {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+        margin: 0 0 30px 0;
+    }
+
+    .searchdomain_container h2 {
+        font-size: 30px;
+    }
+
+    .searchdomain_container input[type='text'] {
+        width: 100%;
+    }
+
+    .contact_container input,
+    .contact_container textarea {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
